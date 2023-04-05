@@ -1,0 +1,341 @@
+body {
+  --primary-color: #2eb872;
+  --secondary-color: #006b36;
+}
+.ourservice {
+  text-align: center;
+}
+.ourservice .title {
+  font-size: 80px;
+  font-weight: 800;
+  padding: 50px;
+  width: 60%;
+  margin: 0 auto;
+  color: var(--secondary-color);
+  border-bottom: 1px solid #006b366e;
+}
+.ourservice .text {
+  width: 50%;
+  margin: 30px auto;
+  padding: 0;
+}
+.ourservicelist .card {
+  border-radius: 30px;
+  margin-top: 30px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.ourservicelist .card .image {
+  overflow: hidden;
+}
+.ourservicelist .card:hover img {
+  transform: scale(1.2);
+}
+.ourservicelist .card .image img {
+  border-radius: 30px 30px 0 0;
+  transition: 0.5s;
+}
+
+.ourservicelist .text {
+  margin: 10px;
+  padding: 0 20px;
+}
+.ourservicelist .text .card-title {
+  color: var(--secondary-color);
+  font-size: 24px;
+  margin-top: 0px;
+  font-weight: 800;
+}
+.ourservicelist .text .card-text {
+  font-size: 14px;
+  margin: 15px auto;
+  padding: 0;
+}
+.ourservicelist .card .text .button {
+  margin: 15px auto;
+  text-align: center;
+}
+.getpiece {
+  padding: 10px 0;
+  margin-top: 50px;
+}
+.getpiece img {
+  height: 450px;
+}
+
+.shop .title {
+  font-size: 60px;
+  font-weight: 800;
+  padding: 50px;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--secondary-color);
+}
+.shop .card {
+  border-radius: 30px;
+  margin-top: 30px;
+  border: none;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.5s;
+}
+
+.shop .card .image img {
+  border-radius: 30px 30px 0 0;
+}
+.shop .card .image {
+  overflow: hidden;
+}
+.shop .card:hover img {
+  transform: scale(1.2);
+}
+.shop .card .image img {
+  border-radius: 30px 30px 0 0;
+  transition: 0.5s;
+}
+.shop .text {
+  margin: 10px;
+  padding: 0 20px;
+}
+.shop .text .card-title {
+  color: var(--secondary-color);
+  font-size: 24px;
+  margin-top: 0px;
+  font-weight: 800;
+}
+.shop .text .card-text {
+  font-size: 14px;
+  margin: 15px auto;
+  padding: 0;
+}
+
+.shop .time {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  color: var(--secondary-color);
+}
+.shop .time i {
+  font-size: 16px;
+  font-weight: 600;
+}
+.shop .time .card-time {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.shop .card .text .time p {
+  font-size: 16px;
+}
+.view {
+  padding: 10px;
+}
+.view .button {
+  text-align: center;
+  margin-top: 70px;
+}
+.view .button .btn {
+  font-size: 30px;
+}
+.like {
+}
+@media (max-width: 1200px) {
+  .ourservice .title {
+    font-size: 70px;
+    padding: 30px;
+  }
+  .ourservice .text {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .ourservice .text .card-text {
+    font-size: 20px;
+    margin: 15px auto;
+  }
+  .ourservicelist .card {
+    margin: 20px auto;
+  }
+  .ourservicelist .text .card-title {
+    font-size: 20px;
+  }
+  .ourservicelist .text .card-text {
+    font-size: 14px;
+    margin: 13px auto;
+  }
+  .ourservicelist .text .button .btn {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+
+  .shop .title {
+    font-size: 60px;
+    padding: 30px;
+  }
+  .shop .text .card-text {
+    font-size: 20px;
+    margin: 15px auto;
+  }
+  .shop .card {
+    margin: 20px auto;
+  }
+  .shop .text .card-title {
+    font-size: 20px;
+  }
+  .shop .text .card-text {
+    font-size: 14px;
+    margin: 13px auto;
+  }
+  .getpiece img {
+    height: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .ourservice .title {
+    font-size: 60px;
+    padding: 20px;
+  }
+  .ourservice .text {
+    width: 90%;
+    margin: 15px auto;
+  }
+  .ourservice .text .card-text {
+    width: 90%;
+    margin: 15px auto;
+  }
+  .ourservicelist .card {
+    margin: 15px auto;
+  }
+  .ourservicelist .text {
+    padding: 0 14px;
+  }
+  .ourservicelist .text .card-title {
+    font-size: 16px;
+  }
+  .ourservicelist .text .card-text {
+    font-size: 12px;
+    margin: 12px auto;
+  }
+  .ourservicelist .text .button .btn {
+    font-size: 16px;
+    padding: 7px 10px;
+  }
+
+  .shop .title {
+    font-size: 50px;
+  }
+
+  .shop .card {
+    margin: 15px auto;
+  }
+  .shop .text .card-title {
+    font-size: 16px;
+  }
+  .shop .text .card-text {
+    font-size: 12px;
+    margin: 12px auto;
+  }
+  .shop .card .text .time {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .shop .card .text .time .card-time {
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  .view .button {
+    margin: 25px;
+  }
+  .view .button .btn {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .ourservice .title {
+    font-size: 40px;
+    padding: 20px;
+  }
+  .ourservice .text .card-text {
+    font-size: 18px;
+    margin: 13px auto;
+  }
+  .ourservicelist .text .card-title {
+    font-size: 20px;
+  }
+  .ourservicelist .text .card-text {
+    font-size: 16px;
+  }
+  .shop .title {
+    font-size: 40px;
+  }
+  .shop .card {
+    margin: 13px auto;
+  }
+}
+@media (max-width: 576px) {
+  .ourservice .title {
+    font-size: 30px;
+    padding: 15px;
+  }
+  .ourservice .text {
+    width: 100%;
+    margin: 12px auto;
+  }
+  .ourservice .text .card-text {
+    font-size: 14px;
+  }
+  .shop .title {
+    font-size: 30px;
+  }
+  .shop .card {
+    margin: 12px auto;
+  }
+  .shop .text .card-text {
+    margin: 10px auto;
+  }
+  .shop .time {
+    margin-top: 15px;
+  }
+  .shop .time i {
+    font-size: 14px;
+  }
+  .shop .card .text .time p {
+    font-size: 12px;
+  }
+  .view .button {
+    margin: 18px;
+  }
+  .view .button .btn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 444px) {
+  .ourservice .title {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .ourservice .text .card-text {
+    font-size: 12px;
+    margin: 10px auto;
+  }
+  .ourservicelist .text .card-title {
+    font-size: 25px;
+  }
+  .ourservicelist .text .card-text {
+    font-size: 12px;
+  }
+  .ourservicelist .card .text .button {
+    margin: 0 auto;
+  }
+  .ourservicelist .card .text .button .btn {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+  .shop .title {
+    font-size: 26px;
+    padding: 10px;
+  }
+}

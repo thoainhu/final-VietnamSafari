@@ -1,0 +1,1705 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  --primary-color: #2eb872;
+  --secondary-color: #006b36;
+  --third-color: #e0610c;
+
+  font-family: "Bai Jamjuree", sans-serif;
+  background-image: url("../img/home/body.img.png");
+  /* font-family: "Nunito Sans", sans-serif; */
+}
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo a {
+  width: 30%;
+  margin-right: 0;
+}
+.logo .logoname {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* BUTTON */
+.button .btn {
+  color: white;
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 12px 24px;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 0;
+  position: relative;
+  border-radius: 0;
+  border: none;
+}
+.button .btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: 0.5s;
+}
+.button .btn:hover::after {
+  width: 100%;
+  z-index: -1;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.button .btn:hover {
+  z-index: 2;
+}
+/* TEXT */
+.text .card-title-1 {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+}
+.text .card-title-1::before {
+  position: absolute;
+  content: "";
+  width: 70px;
+  display: block;
+  height: 3px;
+  background-color: var(--primary-color);
+  bottom: -35%;
+  animation: text 1s;
+}
+.text .card-title {
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: 500;
+}
+.text .card-title span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.text .card-text {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* HEADER */
+.headerMenu {
+  max-width: 1520px;
+  padding: 0;
+  margin: auto;
+  align-items: center;
+}
+.headerMenu.fixed {
+  background-color: white;
+  color: black;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 0;
+}
+
+.headerSlide marquee {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 5px;
+}
+.headerMenu.fixed marquee {
+  display: none;
+}
+.headerMenu.fixed .nav-item .nav-link {
+  color: black;
+}
+.headerMenu .nav-item {
+  margin-left: auto;
+  position: relative;
+  padding: 10px;
+  transition: 0.5s;
+}
+.headerMenu .nav-item .nav-link {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 10px;
+  padding: 0;
+  position: relative;
+}
+.headerMenu .nav-item .nav-link::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: var(--primary-color);
+  top: 30px;
+  transition: 0.5s;
+}
+.headerMenu .nav-item .nav-link:hover {
+  color: var(--primary-color);
+}
+.headerMenu .nav-item:hover .nav-link:before {
+  width: 100%;
+}
+.headerMenu .nav-item:hover .nav-submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 45px;
+}
+.headerMenu .nav-item .nav-submenu {
+  position: absolute;
+  top: 65px;
+  padding: 20px 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  color: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.headerMenu .nav-item .nav-submenu .dropdown-item {
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  width: unset;
+  display: inline-block;
+}
+.headerMenu .nav-item .nav-submenu .dropdown-item:hover {
+  color: var(--primary-color);
+}
+.headerMenu .nav-item .nav-submenu .dropdown-item::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: var(--primary-color);
+  top: 35px;
+  transition: 0.5s;
+}
+.headerMenu .nav-item .nav-submenu .dropdown-item:hover::before {
+  width: 100%;
+}
+.headerMenu .button {
+  margin-left: 20px;
+}
+.headerMenu .button .btn {
+  padding: 9px 24px;
+}
+.headerMenu.fixed .button a {
+  margin: 10px 0;
+}
+
+/* SLIDE */
+.myvideo {
+  top: -100%;
+}
+.myvideo .card {
+  color: white;
+  text-align: center;
+  --bs-card-inner-border-radius: 0;
+  border: none;
+  position: relative;
+}
+
+.myvideo .card .content {
+  margin: 0 auto;
+  width: 60%;
+}
+.myvideo .card video {
+  width: 100%;
+  height: 100%;
+}
+
+.myvideo .card .content h1 {
+  color: var(--primary-color);
+  font-size: 800;
+}
+.myvideo .card .content h3 {
+  animation: moveslide1 1s;
+}
+.myvideo .card .content h1 {
+  animation: moveslide2 1s;
+}
+.myvideo .card .content p {
+  animation: moveslide3 1s;
+}
+.myvideo .card:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.468);
+}
+
+.myvideo .card .card-img-overlay {
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.myvideo .card .card-img-overlay h3 {
+  font-size: 40px;
+}
+.myvideo .card .card-img-overlay h1 {
+  font-size: 100px;
+  font-weight: 800;
+}
+.myvideo .card .card-img-overlay p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.myvideo .card .btn {
+  color: white;
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 0;
+}
+.myvideo .card .btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: 0.5s;
+}
+.myvideo .card .btn:hover::after {
+  width: 100%;
+  z-index: -1;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.myvideo .card .btn:hover {
+  z-index: 2;
+}
+
+/*ABOUT VN SAFRI*/
+.aboutSafari {
+  width: 80%;
+  height: 100%;
+  margin: 100px auto 0 auto;
+}
+
+.aboutSafari .left {
+  padding-right: 50px;
+}
+
+.aboutSafari .button .btn {
+  margin: 30px 0;
+}
+
+.aboutSafari .welcome {
+  padding: 0;
+  margin-top: 20px;
+}
+.aboutSafari .welcome i {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.aboutSafari .welcome .content {
+  padding: 0 10px;
+}
+.aboutSafari .welcome .content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.616);
+}
+.aboutSafari .welcome .content p {
+  font-size: 16px;
+}
+.aboutSafari .animal {
+  position: relative;
+}
+.aboutSafari .choose {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.aboutSafari .choose .choosen {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  animation: moveitem 1s infinite alternate;
+}
+.aboutSafari .choose .choosen:hover::before {
+  background-color: rgba(255, 255, 255, 0);
+}
+.aboutSafari .choose .choosen:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.aboutSafari .choose .choosen:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.aboutSafari .choose .choosen::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+  background-color: rgba(0, 0, 0, 0.178);
+  border-radius: 50%;
+  border-right: 1px solid var(--primary-color);
+  /* animation: rotateborder 1s infinite; */
+}
+@keyframes rotateborder {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes moveitem {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.aboutSafari .choose img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+/*EVENT*/
+.event {
+  margin-top: 100px;
+  align-items: center;
+}
+.event .left .card {
+  background-image: url("../img/home/around-us.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 820px;
+  width: 100%;
+  align-items: center;
+}
+.event .cardContent {
+  width: 100%;
+  border: 0;
+  width: 80%;
+  margin: auto;
+  padding-right: 50px;
+}
+.event .card .text {
+  width: 100%;
+  color: white;
+}
+.event .cardContent .cardContent {
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  font-weight: 800;
+}
+.event .cardContent span {
+  color: black;
+  font-weight: 600;
+}
+.event .right .text .card-text {
+  margin: 40px 0;
+  color: black;
+  font-size: 18px;
+  width: 90%;
+}
+.event .card .image {
+  position: relative;
+}
+.event .card .image::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(17, 36, 18, 0.623);
+}
+.event .card .image img {
+  height: 100%;
+}
+.event .button {
+  color: black;
+}
+.event .content {
+  padding: 20px;
+}
+.event .content h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  position: relative;
+}
+.event .content h3::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 9%;
+  height: 3px;
+  background-color: var(--primary-color);
+  bottom: -35%;
+}
+.event .text span {
+  color: var(--primary-color);
+}
+.event .text .age {
+  display: flex;
+}
+.event .text .age {
+  width: 30%;
+  margin: 0px 5px 20px 0;
+  text-align: center;
+}
+.event .text .age .item {
+  transition: 0.5s;
+}
+.event .text .age .item.active {
+  color: white;
+  background-color: var(--primary-color);
+}
+.event .right {
+  padding-left: 30px;
+}
+.event .right .eventList {
+  margin-top: 55px;
+}
+.event .right .eventList a {
+  text-decoration: none;
+}
+.event .right .eventList .list {
+  padding: 0;
+  width: 90%;
+  margin: 20px 0;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.event .right .eventList .list img {
+  transition: 1.5s;
+  border-radius: 0;
+  height: 150px;
+}
+.event .right .eventList .list .thumb-img {
+  overflow: hidden;
+}
+.event .right .eventList .list:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.event .right .eventList .list:hover img {
+  transform: scale(1.2);
+}
+.event .right .eventList .list .card-title {
+  color: black;
+}
+.event .right .eventList .event-time .card-text {
+  width: 100%;
+}
+/* ACTIVE BOX */
+.event .right .eventList .box {
+  display: none;
+  transition: 0.5s;
+}
+.event .right .eventList .box.active {
+  display: block;
+}
+
+.event .right .eventList .box .list .card-title {
+  font-size: 16px;
+  margin: 5px 0;
+  font-weight: 700;
+  padding: 0;
+}
+.event .right .eventList .box .list .card-text {
+  font-size: 14px;
+}
+
+.event .right .eventList .text .card-title {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+.event .right .eventList .text .card-text {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.event .right .eventList .event-time .text {
+  text-align: center;
+  margin: auto;
+}
+.event .right .eventList .event-time .text h1 {
+  font-size: 20px;
+}
+.event .right .eventList .event-time .text p {
+  font-size: 18px;
+}
+
+/* SERVICE */
+.service {
+  margin-top: 100px;
+  align-items: center;
+}
+.service .serviceTitle .text .card-title {
+  margin-right: 0;
+}
+.service .serviceList {
+  margin: 50px 0;
+}
+.service .serviceList .card {
+  overflow: hidden;
+  border-radius: 0;
+  height: 476px;
+}
+.service .serviceList .card:hover .card-img-overlay {
+  top: 0;
+  background-color: #00000081;
+}
+.service .serviceList .card .image {
+  position: relative;
+  object-fit: cover;
+  height: 100%;
+}
+.service .serviceList .card .image img {
+  border-radius: 0;
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service .serviceList .card .image::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #2eb87331;
+}
+
+.service .serviceList .card .card-img-overlay {
+  text-align: center;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  top: 80%;
+  transition: 1s;
+}
+.service .serviceList .card .contentList .card-title {
+  margin: 20px auto;
+  font-weight: 600;
+  font-size: 30px;
+}
+.service .serviceList .card .contentList .card-text {
+  padding: 20px;
+}
+.service .serviceList .card .contentList .content {
+  transition: 0.5s;
+}
+.service .serviceList .card .contentList .content a {
+  color: white;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  margin-top: 96px;
+}
+.service .serviceList .card .contentList .content a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  background-color: white;
+  transition: 0.5s;
+}
+.service .serviceList .card .contentList .content a:hover::after {
+  width: 100%;
+}
+.service .button {
+  text-align: right;
+}
+
+/* VIDEO */
+.video {
+  background-image: url("../img/home/video.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+}
+.video .content {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.589);
+  padding: 30px 0;
+}
+/* .video .content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.356);
+} */
+.video .content .title {
+  text-align: center;
+  margin: auto;
+  width: 70%;
+  margin: 20px auto;
+  color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.432);
+}
+.video .content .title h3 {
+  color: var(--primary-color);
+  margin-top: 30px;
+}
+.video .content .title h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 800;
+  margin-top: 30px;
+}
+.video .content .title .play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video .content .title .play i {
+  font-size: 20px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.video .content .title .play i::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: -4px;
+  top: -2px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.video .content .number {
+  text-align: center;
+}
+.video .content .number h1 {
+  color: var(--primary-color);
+  margin-right: 20px;
+  font-size: 50px;
+  font-weight: 800;
+}
+.video .content .number h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.modal {
+  --bs-modal-width: 1300px;
+}
+.modal-content {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+.modal-header {
+  border: none;
+}
+.modal-header button {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: white;
+  margin-left: auto;
+}
+.modal-backdrop {
+  --bs-backdrop-opacity: 0.9;
+}
+/* FEEDBACK */
+.feedback {
+  margin-top: 100px;
+}
+.feedback .feedbackTitle {
+  text-align: center;
+}
+.feedback .slide-feedback {
+  margin-top: 50px;
+}
+.feedback .slide-feedback .quote {
+  text-align: center;
+  color: var(--secondary-color);
+}
+.feedback .slide-feedback .quote i {
+  font-size: 50px;
+}
+.feedback .slide-feedback .star {
+  text-align: center;
+  color: rgb(235, 208, 57);
+  margin-top: 10px;
+}
+.feedback .slide-feedback .star i {
+  font-size: 20px;
+  padding: 0 2px;
+}
+.feedback .slide-feedback .text {
+  text-align: center;
+}
+.feedback .slide-feedback .text .card-text {
+  font-size: 18px;
+}
+.feedback .slide-feedback .text .card-title span {
+  font-size: 18px;
+}
+.feedback .slide-feedback .text .card-title {
+  font-size: 24px;
+}
+.feedback .slide-feedback .slick-dots li {
+  display: none;
+}
+
+/* GALLERY */
+.gallery {
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+.gallery .slick-dots {
+  display: none;
+}
+.gallery .item {
+  position: relative;
+  transition: 1s;
+  cursor: pointer;
+}
+.gallery .item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.gallery .item .zoom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+.gallery .item i {
+  color: white;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 5px;
+  position: relative;
+}
+.gallery .item::before {
+  position: absolute;
+  content: "";
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.247);
+  transition: 1s;
+}
+.gallery .slick-dots li {
+  display: none;
+}
+.gallery .item:hover::before {
+  display: block;
+}
+.gallery .item:hover .zoom {
+  display: block;
+}
+/* FOOTER */
+.footer {
+  background-image: url("../img/home/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin-top: 0;
+  z-index: -2;
+}
+.footer .contact {
+  padding: 50px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.footer .contact::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.642);
+  z-index: -1;
+}
+.footer .contact .item {
+  margin-top: 50px;
+}
+
+.footer .contact .text .card-title-1 {
+  font-size: 30px;
+}
+.footer .contact .text .info {
+  display: flex;
+  align-items: center;
+}
+.footer .contact .text .info i {
+  display: inline;
+  color: var(--primary-color);
+  font-size: 30px;
+  margin: 20px 0;
+  margin-right: 10px;
+}
+
+.footer .contact .card-text {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer .contact .social {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer .contact .social i {
+  color: white;
+  font-size: 25px;
+  margin-right: 20px;
+  padding: 5px;
+  transition: 0.5s;
+}
+.footer .contact .social i:hover {
+  color: var(--primary-color);
+}
+.footer .item .text .card-text {
+  font-size: 18px;
+  color: white;
+  margin: 30px 0;
+  transition: 0.5s;
+  font-weight: 600;
+}
+.footer .item .text .card-text:hover {
+  color: var(--primary-color);
+  margin-left: 10px;
+}
+.footer .item .content {
+  margin-top: 10px;
+}
+.footer .item .time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px dashed white;
+  padding: 0;
+}
+.footer .item .time .timeIn {
+  display: flex;
+  align-items: center;
+}
+.footer .item .time .timeIn i {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+.footer .item .time .timeIn .card-text {
+  margin-left: 20px;
+}
+.footer .subcribe .form .button .btn:hover::after {
+  background-color: var(--primary-color);
+}
+
+.copyright {
+  text-align: center;
+  background: black;
+  padding: 15px;
+}
+.copyright h3 {
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.623);
+  font-size: 16px;
+  margin: auto;
+  font-weight: 400;
+}
+.copyright h3 span {
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+}
+.backtop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #9e9e9e56;
+  z-index: 9999;
+  padding: 8px 17px;
+  font-size: 20px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+@keyframes moveslide1 {
+  from {
+    transform: translateY(-150px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes moveslide2 {
+  from {
+    transform: translateY(-70%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes moveslide3 {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.event .age .item {
+  position: relative;
+  padding: 13px 56px;
+  margin-right: 30px;
+  background: #f5ddb7;
+  font-size: 20px;
+  font-weight: 700;
+  color: #181818;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px #18181869, inset 2px 2px 10px #ffffffb0;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0px;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.icon-2 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0px;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.icon-3 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0px;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.icon-4 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0px;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.icon-5 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 0px;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.event .age button:hover {
+  border-radius: 8px 8px 24px 24px;
+}
+
+.event .age button:hover .icon-1 {
+  top: -250%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 50px;
+  height: auto;
+  animation: inIcon1 1s ease 0.45s forwards;
+}
+
+@keyframes inIcon1 {
+  0% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+
+  25% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(5deg);
+  }
+
+  50% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(1deg);
+  }
+
+  65% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(3deg);
+  }
+
+  100% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+}
+
+.event .age button:hover .icon-2 {
+  position: absolute;
+  top: -200%;
+  left: 90%;
+  transform: translate(-50%, 0);
+  width: 75px;
+  height: auto;
+  animation: inIcon2 1s ease 0.45s forwards;
+}
+
+@keyframes inIcon2 {
+  0% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+
+  35% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(10deg);
+  }
+
+  50% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(4deg);
+  }
+
+  80% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(5deg);
+  }
+
+  100% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+}
+
+.event .age button:hover .icon-3 {
+  position: absolute;
+  top: -130%;
+  left: 20%;
+  transform: translate(-50%, 0);
+  width: 60px;
+  height: auto;
+  animation: inIcon3 1s ease 0.45s forwards;
+}
+
+@keyframes inIcon3 {
+  0% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+
+  35% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(-2deg);
+  }
+
+  100% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+}
+
+.event .age button:hover .icon-4 {
+  position: absolute;
+  top: -300%;
+  left: 10%;
+  transform: translate(-50%, 0);
+  width: 85px;
+  height: auto;
+  animation: inIcon4 1s ease 0.45s forwards;
+}
+
+@keyframes inIcon4 {
+  0% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+
+  40% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(-3deg);
+  }
+
+  100% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+}
+
+.event .age button:hover .icon-5 {
+  position: absolute;
+  top: -350%;
+  left: 90%;
+  transform: translate(-50%, 0);
+  width: 85px;
+  height: auto;
+  animation: inIcon5 1s ease 0.45s forwards;
+}
+
+@keyframes inIcon5 {
+  0% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+
+  35% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(-3deg);
+  }
+
+  100% {
+    transform-origin: 0 100%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+}
+
+.fil-leaf-1 {
+  fill: #7b9b3a;
+}
+
+.fil-leaf-2 {
+  fill: #556729;
+  fill-rule: nonzero;
+}
+
+.fil-leaf-3 {
+  fill: #556729;
+}
+
+.fil-leaf-4 {
+  fill: #3c4819;
+}
+
+.fil-leaf-5 {
+  fill: #3c4819;
+}
+@media (max-width: 1485px) {
+  .myvideo .card .card-img-overlay h3 {
+    font-size: 35px;
+  }
+  .myvideo .card .card-img-overlay h1 {
+    font-size: 90px;
+  }
+  .myvideo .card .card-img-overlay p {
+    font-size: 16px;
+  }
+  .myvideo .card .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 1340px) {
+  .myvideo .card .card-img-overlay h3 {
+    font-size: 30px;
+  }
+  .myvideo .card .card-img-overlay h1 {
+    font-size: 80px;
+  }
+  .myvideo .card .card-img-overlay p {
+    font-size: 14px;
+  }
+  .aboutSafari .animal .choose {
+    gap: 15px;
+  }
+  .aboutSafari .animal .choose .choosen img {
+    width: 90px;
+    height: 90px;
+  }
+  .event .right .eventList {
+    margin-top: 45px;
+  }
+  .event .right .text .card-text {
+    margin: 11px 0;
+    font-size: 16px;
+  }
+  .event .right .eventList .box .list .card-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200px) {
+  .myvideo .card .card-img-overlay h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header .navbar .navbar-toggler {
+    background-color: #006b36;
+  }
+  .headerMenu .navbar .navbar-collapse {
+    position: absolute;
+    top: 84px;
+    width: 29%;
+    right: 16px;
+    background: #ffffffb7;
+    text-align: center;
+  }
+  .headerMenu .navbar .navbar-collapse .nav-link {
+    color: black;
+  }
+  .headerMenu .navbar .navbar-collapse .nav-item {
+    margin-left: 0;
+  }
+  .headerMenu .container-fluid {
+    flex-wrap: nowrap;
+  }
+  .headerMenu .logo {
+    margin-right: auto;
+  }
+
+  .headerMenu .navbar-toggler {
+    margin-left: 30px;
+  }
+  .headerMenu .navbar .navbar-collapse .nav-item .nav-submenu {
+    display: none;
+  }
+  .slide .card {
+    height: 60vh;
+  }
+  .aboutSafari .button .btn {
+    margin: 12px 0;
+    font-size: 16px;
+  }
+  .event .button .btn {
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+
+  .aboutSafari .animal .choose {
+    gap: 20px;
+  }
+  .aboutSafari .animal .choose .choosen img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .service .serviceTitle span {
+    display: block;
+  }
+  .event .right {
+    margin-top: 40px;
+  }
+  .feedback .feedbackTitle span {
+    display: block;
+  }
+  .video .content .title h1 {
+    font-size: 40px;
+  }
+  .myvideo .card .content {
+    width: 90%;
+  }
+  .myvideo .card .content h3 {
+    font-size: 16px;
+  }
+  .myvideo .card .content h1 {
+    font-size: 20px;
+  }
+  .myvideo .card .content p {
+    font-size: 14px;
+  }
+  .footer .contact .item {
+    padding-top: 0;
+  }
+  .footer .contact .text .card-title-1 {
+    font-size: 25px;
+    margin-top: 0;
+  }
+  .footer .contact .text .info i {
+    font-size: 25px;
+    margin: 15px 0;
+    margin-right: 18px;
+  }
+  .footer .contact .card-text {
+    margin: 15px 0;
+    font-size: 14px;
+  }
+  .footer .item .text .card-text {
+    font-size: 16px;
+    margin: 18px 0;
+  }
+  .footer .item .time .timeIn i {
+    font-size: 18px;
+  }
+  .footer .item .time .timeIn .card-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutSafari .animal .choose .choosen img {
+    width: 100px;
+    height: 100px;
+  }
+  .aboutSafari .welcome {
+    margin-top: 15px;
+  }
+  .aboutSafari .welcome i {
+    font-size: 30px;
+  }
+  .aboutSafari .welcome .content h3 {
+    font-size: 18px;
+  }
+  .aboutSafari .welcome .content p {
+    font-size: 14px;
+  }
+  .text .card-title-1 {
+    font-size: 18px;
+  }
+  .text .card-title {
+    font-size: 28px;
+  }
+  .text .card-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 723px) {
+  .myvideo .button {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .headerMenu .logo img {
+    width: 70px;
+  }
+  .headerMenu .logo .logoname {
+    display: none;
+  }
+  .header .navbar .button .btn {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+  .header .navbar .navbar-toggler {
+    font-size: 14px;
+    padding: 5px 8px;
+    margin-left: 10px;
+  }
+  .aboutSafari .welcome {
+    margin-top: 5px;
+  }
+  .aboutSafari {
+    margin-top: 20px;
+  }
+  .aboutSafari .left {
+    padding-right: 0;
+  }
+  .aboutSafari .left .text .card-title-1 {
+    font-size: 14px;
+  }
+  .aboutSafari .left .text .card-title {
+    font-size: 20px;
+  }
+  .aboutSafari .left .text .card-text {
+    font-size: 14px;
+  }
+  .aboutSafari .animal .choose {
+    gap: 12px;
+  }
+  .aboutSafari .animal .choose .choosen img {
+    width: 80px;
+    height: 80px;
+  }
+  .event {
+    margin-top: 30px;
+  }
+  .event .card-img-overlay {
+    width: 100%;
+  }
+  .event .card-img-overlay .text {
+    width: 100%;
+  }
+  .event .age .item {
+    padding: 8px 27px;
+    margin-right: 19px;
+    font-size: 13px;
+  }
+  .event .right {
+    margin-top: 20px;
+  }
+  .event .right .text .card-title-1 {
+    font-size: 14px;
+  }
+  .event .right .text .card-title {
+    font-size: 20px;
+  }
+  .event .right .text .card-text {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+  .event .right .eventList {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .event .right .eventList .thumb-text p {
+    display: none;
+    margin-top: 15px;
+  }
+  .event .right .eventList h1 {
+    font-size: 20px;
+  }
+  .service {
+    margin-top: 20px;
+  }
+  .service .text .card-title-1 {
+    font-size: 16px;
+  }
+  .service .text .card-title {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  .footer .contact .text .card-title-1 {
+    font-size: 20px;
+  }
+  .footer .contact .text .info i {
+    font-size: 18px;
+    margin: 10px 0;
+    margin-right: 10px;
+  }
+  .footer .contact .card-text {
+    margin: 10px 0;
+    font-size: 12px;
+  }
+  .footer .item .text .card-text {
+    font-size: 16px;
+    margin: 16px 0;
+  }
+  .footer .item .time .timeIn i {
+    font-size: 14px;
+  }
+  .footer .item .time .timeIn .card-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .event .card .card-img-overlay .text .card-title {
+    font-size: 20px;
+  }
+  .event .card .card-img-overlay .text .card-text {
+    font-size: 14px;
+  }
+  .event .card .image img {
+    height: 80vh;
+  }
+}
+@media (max-width: 589px) {
+  .aboutSafari .welcome .content h3 {
+    font-size: 16px;
+  }
+  .aboutSafari .welcome .content p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 444px) {
+  .aboutSafari .welcome .content h3 {
+    font-size: 14px;
+  }
+  .aboutSafari .welcome .content p {
+    font-size: 10px;
+  }
+  .aboutSafari .animal .choose {
+    gap: 8px;
+  }
+  .aboutSafari .animal .choose .choosen img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .video .content .title h1 {
+    font-size: 50px;
+  }
+  .video .content .number h1 {
+    margin-right: 20px;
+    font-size: 40px;
+  }
+  .video .content .number h3 {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  .feedback {
+    margin-top: 80px;
+  }
+  .feedback .slide-feedback {
+    margin-top: 40px;
+  }
+  .feedback .slide-feedback .quote i {
+    font-size: 40px;
+  }
+  .feedback .slide-feedback .star i {
+    font-size: 20px;
+  }
+  .feedback .slide-feedback .text .card-text {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .feedback .slide-feedback .text .card-title span {
+    font-size: 16px;
+  }
+  .feedback .slide-feedback .text .card-title {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .video .content .title h1 {
+    font-size: 40px;
+  }
+  .video .content .title {
+    width: 80%;
+  }
+  .feedback {
+    margin-top: 60px;
+  }
+  .feedback .slide-feedback {
+    margin-top: 30px;
+  }
+  .feedback .slide-feedback .quote i {
+    font-size: 25px;
+  }
+  .feedback .slide-feedback .star i {
+    font-size: 18px;
+  }
+  .feedback .slide-feedback .text .card-text {
+    font-size: 14px;
+    margin-top: 18px;
+  }
+  .feedback .slide-feedback .text .card-title span {
+    font-size: 14px;
+  }
+  .feedback .slide-feedback .text .card-title {
+    font-size: 20px;
+    margin-top: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .video .content .title h1 {
+    font-size: 30px;
+  }
+  .video .content .title {
+    width: 90%;
+  }
+  .video .content .number h1 {
+    margin-right: 18px;
+    font-size: 40px;
+  }
+  .video .content .number h3 {
+    margin-right: 16px;
+    font-size: 20px;
+  }
+  .feedback {
+    margin-top: 40px;
+  }
+  .feedback .slide-feedback .quote i {
+    font-size: 18px;
+  }
+  .feedback .slide-feedback .star {
+    margin-top: 0;
+  }
+  .feedback .slide-feedback .star i {
+    font-size: 16px;
+  }
+  .feedback .slide-feedback .text .card-text {
+    font-size: 12px;
+    margin-top: 16px;
+  }
+  .feedback .slide-feedback .text .card-title span {
+    font-size: 12px;
+  }
+  .feedback .slide-feedback .text .card-title {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .feedback {
+    margin-top: 20px;
+  }
+  .feedback .slide-feedback {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 444px) {
+}

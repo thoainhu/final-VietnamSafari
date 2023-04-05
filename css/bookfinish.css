@@ -1,0 +1,80 @@
+.finish {
+  margin: 20px auto;
+  width: 50%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: rgba(100, 100, 111, 0.681) 0px 7px 29px 0px;
+}
+.finish i {
+  font-size: 26px;
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+.finish p {
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+  margin: 10px;
+}
+.back {
+  margin: 40px auto;
+  text-align: center;
+}
+.banner .bannerimg {
+  height: 65vh;
+}
+
+@media (max-width: 1237px) {
+  .getticket .title {
+    font-size: 70px;
+    padding: 30px;
+  }
+}
+@media (max-width: 1037px) {
+  .getticket .title {
+    font-size: 50px;
+    padding: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .finish {
+    width: 80%;
+  }
+  .getticket {
+    width: 80%;
+  }
+}
+@media (max-width: 769px) {
+  .getticket .title {
+    font-size: 40px;
+  }
+  .finish i {
+    font-size: 22px;
+    margin: 5px;
+  }
+  .finish p {
+    font-size: 20px;
+    margin: 5px;
+  }
+}
+@media (max-width: 467px) {
+  .finish {
+    width: 90%;
+  }
+  .getticket {
+    width: 90%;
+  }
+  .finish i {
+    font-size: 20px;
+  }
+  .finish p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 416px) {
+  .getticket .title {
+    font-size: 30px;
+    padding: 20px;
+  }
+}

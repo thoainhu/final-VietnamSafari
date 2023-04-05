@@ -1,0 +1,216 @@
+.reviewquality {
+  margin: auto;
+}
+.select {
+  width: 40%;
+}
+.select .card-text-title {
+  margin: 25px 15px;
+  font-size: 20px;
+}
+.select .mess .title {
+  margin: 10px 0;
+}
+.finalinfo {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: rgba(100, 100, 111, 0.681) 0px 7px 29px 0px;
+}
+.finalinfo h5 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: black;
+}
+.finalinfo h5 span {
+  font-weight: 700;
+  color: var(--third-color);
+}
+.finalinfo .note {
+  display: block;
+}
+.finalinfo .note.active {
+  display: none;
+}
+.chooseticket .item .right {
+  width: 50%;
+}
+.chooseticket .item .qualityitem {
+  font-size: 24px;
+  font-weight: 700;
+}
+.chooseticket .item .reviewquality {
+  width: 20%;
+}
+.chooseticket .item .number {
+  margin: 0;
+  margin-left: auto;
+  font-size: 30px;
+  padding: 0 10px;
+  color: var(--third-color);
+  font-weight: 600;
+}
+.chooseticket .total .totalpirce p {
+  margin: 0;
+  margin-left: auto;
+  font-size: 35px;
+  padding: 0 10px;
+  color: var(--third-color);
+  font-weight: 800;
+}
+.verify {
+  margin-top: 30px;
+}
+.verify .mess {
+  background-color: var(--secondary-color);
+  color: white;
+  margin-top: 15px;
+}
+.verify .mess h5 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.verify .mess h5 span {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.total h3 {
+  width: 61%;
+}
+
+#adult {
+  display: flex;
+}
+#adult.active {
+  display: none;
+}
+#child {
+  display: flex;
+}
+#child.active {
+  display: none;
+}
+#totalquantityafter {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .select {
+    width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .select {
+    width: 60%;
+  }
+  .total {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .select {
+    width: 80%;
+  }
+  .finalinfo h5 {
+    font-size: 18px;
+  }
+  .finalinfo h5 span {
+    font-size: 20px;
+  }
+  .total {
+    padding-top: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .select {
+    width: 90%;
+  }
+  .select .card-text-title {
+    margin: 15px;
+    font-size: 16px;
+  }
+  .chooseticket .item .right {
+    width: 40%;
+  }
+  .total h3 {
+    width: 53%;
+  }
+  .verify .mess h5 {
+    font-size: 20px;
+  }
+  .verify .mess h5 span {
+    font-size: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .select {
+    width: 100%;
+  }
+  .total h3 {
+    width: 57%;
+  }
+  #totalquantityafter {
+    display: block;
+  }
+  #totalquantitybefore {
+    display: none;
+  }
+  #totalquantityafter {
+    font-size: 22px;
+  }
+}
+@media (max-width: 452px) {
+  .select {
+    width: 100%;
+  }
+  .verify .mess h5 {
+    font-size: 18px;
+    margin: 5px;
+  }
+  .verify .mess h5 span {
+    font-size: 18px;
+  }
+  .verify .mess {
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 444px) {
+  .chooseticket .item img {
+    display: none;
+  }
+  #totalquantityafter {
+    display: none;
+  }
+  .finalinfo h5 span {
+    font-size: 18px;
+  }
+  .chooseticket .item {
+    margin: 5px 0;
+  }
+  .chooseticket .item .money .number p {
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .chooseticket .item .qualityitem {
+    font-size: 22px;
+  }
+  .total {
+    padding-top: 5px;
+  }
+}
+@media (max-width: 380px) {
+  .finalinfo h5 {
+    font-size: 16px;
+  }
+  .finalinfo h5 span {
+    font-size: 16px;
+  }
+  .verify .mess h5 {
+    font-size: 16px;
+  }
+  .verify .mess h5 span {
+    font-size: 16px;
+  }
+}

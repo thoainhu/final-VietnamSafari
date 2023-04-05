@@ -1,0 +1,614 @@
+body {
+  --primary-color: #2eb872;
+  --secondary-color: #006b36;
+}
+.present {
+  text-align: center;
+}
+.present .title {
+  font-size: 80px;
+  font-weight: 800;
+  padding: 50px;
+  width: 60%;
+  margin: 0 auto;
+  color: var(--secondary-color);
+  border-bottom: 1px solid #006b366e;
+}
+.presentlist {
+  margin-top: 50px;
+  padding: 5px;
+}
+.presentlist .item {
+  position: relative;
+  padding: 10px auto;
+  overflow: hidden;
+  border: 2px solid white;
+}
+.presentlist .item::before {
+  position: absolute;
+  content: "";
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-180deg, rgb(0 0 0 / 0%) 54%, #000 92%);
+  z-index: 1;
+}
+.presentlist .item:hover .text {
+  top: 60%;
+}
+.presentlist .item:hover .text .card-text {
+  opacity: 1;
+}
+.presentlist .item:hover img {
+  transform: scale(1.1);
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 61%, #000 100%);
+}
+.presentlist .item .text {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  color: white;
+  z-index: 2;
+  transition: 0.5s;
+}
+.presentlist .item .text .card-title {
+  font-size: 40px;
+}
+.presentlist .item .text .card-text {
+  opacity: 0;
+  transition: 0.5s;
+}
+.presentlist .item img {
+  height: 80vh;
+  transition: 0.5s;
+}
+.schedule {
+  text-align: center;
+}
+.schedule .info .text .card-title {
+  color: var(--secondary-color);
+  margin: 50px auto;
+  font-weight: 700;
+}
+.schedule .info .text .card-text {
+  width: 40%;
+  font-size: 20px;
+  margin: 20px auto;
+}
+.table {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+.table .tableschedule {
+  margin: 50px auto 10px;
+  width: 60%;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  color: white;
+}
+.table .tableschedule .card-title {
+  font-size: 25px;
+  font-weight: 800;
+}
+.table .textschedule {
+  margin: 0px auto;
+  width: 60%;
+  padding: 5px;
+  border-radius: 15px;
+}
+.table .textschedule .title {
+  border-bottom: 1px solid #006b36;
+}
+.table .textschedule .card-title {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+.table .textschedule .card-title span {
+  font-size: 24px;
+  font-weight: 800;
+}
+.table .textschedule .card-text {
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+.tableafter {
+  width: 60%;
+  margin: 47px auto 10px;
+  display: none;
+}
+.tableafter .tableschedule {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+}
+.tableafter .tableschedule .card-title {
+  font-weight: 700;
+  font-size: 24px;
+  width: 70%;
+}
+.tableafter .terms:nth-child(1) {
+  border-top: 1px solid var(--secondary-color);
+}
+.tableafter .terms {
+  border-bottom: 1px solid var(--secondary-color);
+  margin: 0px;
+  padding: 0 auto 10px;
+}
+.tableafter .terms .text {
+  text-align: center;
+  align-items: center;
+  color: var(--secondary-color);
+  display: flex;
+  cursor: pointer;
+}
+.tableafter .terms .text .card-title {
+  margin: 10px auto;
+  font-size: 24px;
+  font-weight: 700;
+  width: 70%;
+}
+.tableafter .terms .text .card-title span {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+.tableafter .terms .text i {
+  font-size: 24px;
+  padding: 10px;
+  width: 30%;
+  color: var(--secondary-color);
+}
+.tableafter .terms .text i:last-child {
+  margin: 0 auto;
+  transition: 0.5s;
+}
+.tableafter .terms .text.active i:last-child {
+  transform: rotate(90deg);
+}
+.tableafter .terms .content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: none;
+}
+.tableafter .terms .content .item {
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  border-bottom: 1px solid #006b36;
+  background-color: var(--secondary-color);
+}
+.tableafter .terms .content .item .card-title {
+  margin: 10px auto;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  width: 50%;
+  padding: 5px;
+  color: white;
+}
+
+.good {
+  text-align: center;
+  margin-top: 30px;
+}
+.good .title {
+  font-size: 50px;
+  font-weight: 800;
+  padding: 50px;
+  width: 60%;
+  margin: 0 auto;
+  color: var(--secondary-color);
+}
+.good .note {
+  margin: 50px auto;
+}
+.good .note .card img {
+  border-radius: 20px 20px 0 0;
+}
+.good .note .card {
+  border-radius: 20px;
+  border: 1px solid white;
+  text-align: start;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.good .note .card .text {
+  height: 160px;
+}
+.good .note .card .card-title {
+  font-size: 26px;
+  margin: 10px 20px;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+.good .note .card .card-text {
+  font-size: 16px;
+  margin: 10px 20px;
+}
+.chair {
+  width: 50%;
+  margin: auto;
+  margin-top: 70px;
+  align-items: center;
+}
+.chair .image {
+  float: left;
+  margin: 0 10px 10px 0;
+  text-align: center;
+}
+.chair .image img {
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0 auto;
+}
+.chair .text {
+  text-align: start;
+  float: none;
+  margin-top: 0;
+}
+.chair .text .card-title {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0;
+}
+.chair .text .card-text {
+  font-size: 22px;
+  margin-top: 10px;
+}
+.priceshow {
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+}
+.priceshow .tableprice {
+  text-align: center;
+  width: 80%;
+}
+@media (max-width: 1550px) {
+  .table .tableschedule .card-title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1400px) {
+  .schedule .info .text .card-text {
+    width: 85%;
+    margin: 15px auto;
+  }
+  .table .tableschedule {
+    width: 65%;
+  }
+  .table .textschedule .card-title span {
+    font-size: 22px;
+  }
+  .table .textschedule .card-text {
+    font-size: 15px;
+  }
+  .good .note {
+    margin: 40px auto;
+  }
+  .good .note .card .card-title {
+    font-size: 25px;
+  }
+  .good .note .card .card-text {
+    font-size: 15px;
+  }
+  .priceshow {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 1284px) {
+  .table .tableschedule .card-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .present .title {
+    font-size: 60px;
+    padding: 30px;
+    width: 80%;
+  }
+  .presentlist .item img {
+    height: 70vh;
+  }
+  .presentlist .item .text .card-title {
+    font-size: 30px;
+  }
+  .presentlist .item .text {
+    top: 70%;
+  }
+  .presentlist .item:hover .text {
+    top: 50%;
+  }
+  .schedule .info .text .card-title {
+    font-size: 50px;
+    padding: 0;
+    margin: 30px auto;
+  }
+  .schedule .info .text .card-text {
+    width: 80%;
+    margin: 15px auto;
+  }
+  .table .tableschedule {
+    width: 70%;
+  }
+  .table .textschedule {
+    width: 70%;
+  }
+  .table .textschedule .card-title span {
+    font-size: 20px;
+  }
+  .table .textschedule .card-text {
+    font-size: 14px;
+  }
+  .good .title {
+    font-size: 40px;
+    padding: 30px;
+    width: 80%;
+  }
+  .good .note {
+    margin: 30px auto;
+  }
+  .good .note .card .text {
+    height: 170px;
+  }
+  .good .note .card .card-title {
+    font-size: 20px;
+  }
+  .good .note .card .card-text {
+    font-size: 13px;
+  }
+  .priceshow {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 1101px) {
+  .table .tableschedule .card-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1011px) {
+  .table .tableschedule .card-title {
+    font-size: 17px;
+  }
+}
+@media (max-width: 991px) {
+  .presentlist .item:hover .text {
+    top: 40%;
+  }
+  .present .title {
+    font-size: 60px;
+    padding: 20px;
+  }
+  .presentlist {
+    margin-top: 40px;
+  }
+  .presentlist .item img {
+    height: 60vh;
+  }
+  .table {
+    display: none;
+  }
+  .tableafter {
+    display: block;
+  }
+  .good .title {
+    font-size: 60px;
+    padding: 20px;
+  }
+  .good .note {
+    margin: 30px auto;
+  }
+  .good .note .card {
+    margin-top: 15px;
+  }
+  .good .note .card .text {
+    height: 160px;
+  }
+  .good .note .card .card-title {
+    font-size: 22px;
+  }
+  .good .note .card .card-text {
+    font-size: 14px;
+  }
+  .chair {
+    width: 60%;
+    margin-bottom: 40px;
+  }
+
+  .chair .text .card-title {
+    font-size: 24px;
+  }
+  .chair .text .card-text {
+    font-size: 20px;
+  }
+  .priceshow {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .presentlist .item:hover .text {
+    top: 30%;
+  }
+  .present .title {
+    font-size: 40px;
+    padding: 15px;
+  }
+  .presentlist {
+    margin-top: 30px;
+  }
+  .presentlist .item img {
+    height: 50vh;
+  }
+  .presentlist .item .text .card-title {
+    font-size: 25px;
+  }
+  .presentlist .item .text .card-text {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+  .schedule .info .text .card-title {
+    font-size: 30px;
+    margin: 20px auto;
+  }
+  .schedule .info .text .card-text {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 16px;
+  }
+  .tableafter {
+    width: 80%;
+  }
+  .tableafter .tableschedule .card-title {
+    font-size: 22px;
+  }
+  .tableafter .terms .text .card-title {
+    font-size: 22px;
+  }
+  .tableafter .terms .content .item .card-title {
+    font-size: 16px;
+    margin: 7px auto;
+  }
+  .tableafter .terms .text i {
+    font-size: 22px;
+  }
+  .tableafter .terms .text .card-title span {
+    font-size: 16px;
+  }
+  .good .title {
+    font-size: 40px;
+    padding: 15px;
+  }
+  .good .note .card .text {
+    height: 130px;
+  }
+  .good .note .card .card-title {
+    font-size: 20px;
+  }
+  .good .note .card .card-text {
+    font-size: 12px;
+  }
+  .chair {
+    width: 80%;
+    margin: 60px auto;
+  }
+  .chair .text .card-title {
+    font-size: 22px;
+  }
+  .chair .text .card-text {
+    font-size: 18px;
+  }
+  .priceshow {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .present .title {
+    font-size: 30px;
+    padding: 13px;
+  }
+  .presentlist .item img {
+    height: 40vh;
+  }
+  .presentlist {
+    margin-top: 20px;
+  }
+  .presentlist .item .text .card-title {
+    font-size: 18px;
+  }
+  .presentlist .item .text .card-text {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .tableafter .tableschedule .card-title {
+    font-size: 20px;
+  }
+  .tableafter .terms .text .card-title {
+    font-size: 20px;
+  }
+  .tableafter .terms .content .item .card-title {
+    font-size: 16px;
+    margin: 5px auto;
+  }
+  .tableafter .terms .text i {
+    font-size: 20px;
+  }
+  .tableafter .terms .text .card-title span {
+    font-size: 14px;
+  }
+  .good .title {
+    font-size: 30px;
+    padding: 13px;
+  }
+  .good .note .card .text {
+    height: 130px;
+  }
+  .good .note .card .card-title {
+    font-size: 24px;
+  }
+  .good .note .card .card-text {
+    font-size: 16px;
+  }
+  .chair {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .chair .text .card-title {
+    font-size: 20px;
+  }
+  .chair .text .card-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 444px) {
+  .present .title {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .tableafter .tableschedule .card-title {
+    font-size: 18px;
+  }
+  .tableafter .terms .text .card-title {
+    font-size: 16px;
+  }
+  .tableafter .terms .content .item .card-title {
+    font-size: 14px;
+    margin: 2px auto;
+  }
+  .tableafter .terms .text i {
+    font-size: 18px;
+  }
+  .tableafter .terms .text .card-title span {
+    font-size: 12px;
+  }
+  .good .note .card .text {
+    height: 125px;
+  }
+  .good .note .card .card-title {
+    font-size: 20px;
+  }
+  .good .note .card .card-text {
+    font-size: 14px;
+  }
+  .chair {
+    margin: 50px auto 30px;
+  }
+
+  .chair .text .card-title {
+    font-size: 18px;
+  }
+  .chair .text .card-text {
+    font-size: 14px;
+  }
+}

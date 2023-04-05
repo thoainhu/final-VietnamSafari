@@ -1,0 +1,171 @@
+.discovertitle {
+  text-align: center;
+}
+
+.discovertitle .text {
+  width: 50%;
+  margin: 30px auto;
+  padding: 0;
+}
+.discovertitle .title {
+  font-size: 80px;
+  font-weight: 800;
+  padding: 50px;
+  width: 60%;
+  margin: 0 auto;
+  color: var(--secondary-color);
+  border-bottom: 1px solid #006b366e;
+}
+
+.all {
+  text-align: center;
+}
+.session {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.session .item {
+  position: relative;
+  transition: 1s;
+  cursor: pointer;
+  margin-top: 25px;
+  overflow: hidden;
+}
+.session .item img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.session .item .zoom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+.session .item i {
+  color: white;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 5px;
+  position: relative;
+}
+.session .item::before {
+  position: absolute;
+  content: "";
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.247);
+  transition: 1s;
+}
+.session .item:hover::before {
+  display: block;
+}
+.session .item:hover .zoom {
+  display: block;
+}
+
+.session .item:hover img {
+  transform: scale(1.5);
+}
+.all .button {
+  margin: 20px auto;
+}
+.all .button .btn {
+  font-size: 20px;
+  padding: 15px 25px;
+}
+#more {
+  display: none;
+}
+#moremore {
+  display: none;
+}
+
+#more.active {
+  display: block;
+}
+#moremore.active {
+  display: block;
+}
+#btnmore {
+}
+#btnmore.active {
+  display: none;
+}
+#btnmoremore {
+  display: none;
+}
+#btnmoremore.active {
+  display: block;
+}
+#less {
+  display: none;
+}
+#less.active {
+  display: block;
+}
+@media (max-width: 1200px) {
+  .discovertitle .text {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .discovertitle .title {
+    font-size: 70px;
+    padding: 30px;
+  }
+  .discovertitle .card-text {
+    font-size: 20px;
+    margin: 15px auto;
+  }
+}
+@media (max-width: 991px) {
+  .discovertitle .text {
+    width: 90%;
+    margin: 15px auto;
+  }
+  .discovertitle .title {
+    font-size: 60px;
+    padding: 20px;
+  }
+  .discovertitle .card-text {
+    width: 90%;
+    margin: 15px auto;
+  }
+}
+@media (max-width: 768px) {
+  .discovertitle .title {
+    font-size: 40px;
+    padding: 20px;
+  }
+  .discovertitle .card-text {
+    font-size: 18px;
+    margin: 13px auto;
+  }
+}
+@media (max-width: 575px) {
+  .discovertitle .title {
+    font-size: 30px;
+    padding: 15px;
+  }
+  .discovertitle .card-text {
+    font-size: 14px;
+  }
+  .discovertitle .text {
+    width: 100%;
+    margin: 12px auto;
+  }
+}
+@media (max-width: 444px) {
+  .discovertitle .title {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .discovertitle .card-text {
+    font-size: 12px;
+    margin: 10px auto;
+  }
+}

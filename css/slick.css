@@ -1,0 +1,115 @@
+/* Arrows */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  border-radius: 5px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 2px solid rgb(255 255 255 / 50%);
+  background-color: transparent;
+  z-index: 999;
+  border-radius: 50%;
+  box-shadow: 3px 0px 8px 0px rgb(0 0 0 / 20%);
+  transition: 0.5s;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "";
+  font-family: FontAwesome;
+  line-height: 1;
+  color: rgb(255 255 255 / 60%);
+  font-size: 19px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+
+.slick-prev {
+  left: 0px;
+}
+.slick-prev::before {
+  content: "\f060";
+}
+.slick-next {
+  right: 0;
+}
+.slick-next::before {
+  content: "\f061";
+}
+.slick-arrow:hover {
+  border: 2px solid #fff;
+}
+.slick-arrow:hover::before {
+  color: #fff;
+}
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  margin-left: -19px;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -19px;
+  transform: translateX(-50%);
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+}
+.slick-dots li button {
+  font-size: 10px;
+  border-radius: 50%;
+  color: transparent;
+  border: 2px solid #bfbfbf;
+  background-color: #fff;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border: none;
+  padding-right: -1px;
+  padding-bottom: -1px;
+  margin: 5px;
+}
+.slick-dots li.slick-active {
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  padding: 0;
+  width: 21px;
+  height: 21px;
+}
+.slick-dots li.slick-active button {
+  background-color: var(--primary-color);
+  padding: 2px;
+  justify-items: center;
+}

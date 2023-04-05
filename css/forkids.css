@@ -1,0 +1,255 @@
+body {
+  --primary-color: #2eb872;
+  --secondary-color: #006b36;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.friends {
+  text-align: center;
+}
+.friends .title {
+  font-size: 80px;
+  font-weight: 800;
+  padding: 50px;
+  width: 60%;
+  margin: 0 auto;
+  color: var(--secondary-color);
+  border-bottom: 1px solid #006b366e;
+}
+.friends .text {
+  width: 50%;
+  margin: 30px auto;
+  padding: 0;
+}
+
+.friendslist .card {
+  border-radius: 30px;
+  margin-top: 30px;
+  border: none;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.5s;
+}
+.friendslist .card .image {
+  overflow: hidden;
+}
+
+.friendslist .card:hover img {
+  transform: scale(1.2);
+}
+.friendslist .card .image img {
+  border-radius: 30px 30px 0 0;
+  transition: 0.5s;
+}
+
+.friendslist .text {
+  margin: 13px;
+}
+.friendslist .text .card-title {
+  color: var(--secondary-color);
+  font-size: 24px;
+  margin-top: 0px;
+  font-weight: 700;
+}
+.friendslist .text .card-text {
+  font-size: 16px;
+  margin: 15px auto;
+  padding: 0;
+}
+.friendslist .time {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  color: var(--secondary-color);
+}
+.friendslist .time i {
+  font-size: 16px;
+  font-weight: 600;
+}
+.friendslist .time .card-time {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.friendslist .card .text .time p {
+  font-size: 16px;
+}
+.like {
+  text-align: center;
+  margin: 50px auto;
+}
+.like .title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+.like .list {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.like .list .item {
+  margin: 20px;
+  cursor: pointer;
+}
+.like .list .item .image {
+  width: 180px;
+  height: 180px;
+  cursor: pointer;
+}
+.like .list .item .image:hover {
+  animation: hover 0.8s infinite linear alternate;
+}
+.like .list .item .image img {
+  border-radius: 50%;
+}
+.like .list .item .content h4 {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--secondary-color);
+  margin-top: 20px;
+}
+@keyframes hover {
+  from {
+    transform: translateY(15);
+  }
+
+  to {
+    transform: translateY(-15px);
+  }
+}
+@media (max-width: 1200px) {
+  .friends .title {
+    font-size: 70px;
+    padding: 30px;
+  }
+  .friends .text {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .friends .text .card-text {
+    font-size: 20px;
+    margin: 15px auto;
+  }
+  .friendslist .card {
+    margin: 20px auto;
+  }
+  .friendslist .text .card-title {
+    font-size: 20px;
+  }
+  .friendslist .text .card-text {
+    font-size: 14px;
+    margin: 13px auto;
+  }
+}
+@media (max-width: 992px) {
+  .friends .title {
+    font-size: 60px;
+    padding: 30px;
+  }
+  .friends .text {
+    width: 90%;
+    margin: 15px auto;
+  }
+  .friends .text .card-text {
+    font-size: 18px;
+    margin: 10px auto;
+  }
+  .friendslist .card {
+    margin: 15px auto;
+  }
+  .friendslist .text .card-title {
+    font-size: 18px;
+  }
+  .friendslist .text .card-text {
+    font-size: 12px;
+    margin: 12px auto;
+  }
+}
+@media (max-width: 768px) {
+  .friends .title {
+    font-size: 40px;
+    padding: 20px;
+  }
+  .friends .text .card-text {
+    font-size: 16px;
+    margin: 13px auto;
+  }
+  .friendslist .card {
+    margin: 13px auto;
+  }
+  .like .list .item .image {
+    width: 150px;
+    height: 150px;
+  }
+  .like .list .item .content h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .friends .title {
+    font-size: 30px;
+    padding: 15px;
+  }
+  .friends .text {
+    width: 100%;
+    margin: 12px auto;
+  }
+  .friends .text .card-text {
+    font-size: 14px;
+  }
+  .friendslist .card {
+    margin: 12px auto;
+  }
+
+  .friendslist .text .card-text {
+    margin: 10px auto;
+  }
+  .friendslist .time {
+    margin-top: 15px;
+  }
+  .friendslist .time i {
+    font-size: 14px;
+  }
+  .friendslist .card .text .time p {
+    font-size: 12px;
+  }
+  .like .title {
+    font-size: 25px;
+  }
+  .like .list .item {
+    margin: 10px;
+  }
+  .like .list .item .image {
+    width: 120px;
+    height: 120px;
+  }
+  .like .list .item .content h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 444px) {
+  .friends .title {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .friends .text .card-text {
+    font-size: 12px;
+    margin: 10px auto;
+  }
+  .like .title {
+    font-size: 20px;
+  }
+  .like .list .item {
+    margin: 6px;
+  }
+  .like .list .item .image {
+    width: 80px;
+    height: 80px;
+  }
+  .like .list .item .content h4 {
+    font-size: 14px;
+  }
+}

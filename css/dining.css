@@ -1,0 +1,372 @@
+body {
+  --primary-color: #2eb872;
+  --secondary-color: #006b36;
+}
+
+.dining .text {
+  text-align: center;
+}
+.dining .text .card-title-1::before {
+  display: none;
+}
+.dining .text .card-title-1 {
+  width: 50%;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.dining .text .title {
+  font-size: 80px;
+  font-weight: 800;
+  padding: 50px;
+  width: 60%;
+  margin: 10px auto;
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+.alldininglist {
+  margin-top: 50px;
+}
+.dininglist {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  width: 60%;
+}
+
+.dininglist .pic img {
+  border-radius: 30px;
+}
+.dininglist .listcontent {
+  text-align: start;
+  margin-left: 30px;
+}
+.dininglist .listcontent .card-title {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+.diningtable {
+  padding: 10px;
+  margin: 50px auto;
+}
+.table {
+  text-align: center;
+  margin: 50px auto;
+  width: 50%;
+}
+.diningtable .table .line {
+  padding: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+}
+.table .info {
+  padding: 10px;
+  border-bottom: 1px solid #006b36;
+}
+.table .info .card-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+
+.table .info .card-title-info {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+.diningtable .terms {
+  border-bottom: 1px solid var(--primary-color);
+  margin-top: 0px;
+  padding: 0;
+}
+.diningtable .terms .text {
+  align-items: center;
+  color: var(--secondary-color);
+  display: flex;
+  cursor: pointer;
+}
+.diningtable .terms .text .card-title {
+  margin: 16px 0;
+  font-size: 28px;
+  font-weight: 700;
+  width: 58%;
+}
+.diningtable .terms .text i {
+  font-size: 30px;
+  padding: 10px;
+  margin-left: auto;
+  width: 42%;
+  color: var(--secondary-color);
+}
+.diningtable .terms .text i:last-child {
+  margin-left: auto;
+  transition: 0.5s;
+}
+.diningtable .terms .text.active i:last-child {
+  transform: rotate(180deg);
+}
+
+.diningtable ul {
+  padding: 0;
+  display: none;
+  width: 95%;
+  margin: 10px auto;
+  text-align: start;
+  margin-right: 0;
+}
+.diningtable li {
+  padding: 10px;
+  font-size: 18px;
+  list-style: decimal;
+}
+@media (max-width: 1400px) {
+  .alldininglist {
+    margin-top: 70px;
+  }
+  .alldininglist .dininglist {
+    width: 70%;
+  }
+  .alldininglist .dininglist .listcontent {
+    margin-left: 20px;
+  }
+  .alldininglist .dininglist .listcontent .text .card-text {
+    margin-top: 18px;
+    font-size: 18px;
+  }
+  .diningtable {
+    margin: 40px auto;
+  }
+  .diningtable .table {
+    margin: 40px auto;
+  }
+}
+@media (max-width: 1200px) {
+  .dining .text .title {
+    font-size: 60px;
+    padding: 30px;
+    width: 80%;
+  }
+  .dining .text .card-title-1 {
+    width: 60%;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .alldininglist {
+    margin-top: 60px;
+  }
+  .alldininglist .dininglist {
+    width: 80%;
+  }
+  .alldininglist .dininglist .listcontent {
+    margin-left: 20px;
+  }
+  .alldininglist .dininglist .listcontent .card-title {
+    font-size: 30px;
+  }
+  .alldininglist .dininglist .listcontent .text .card-text {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  .dininglist {
+    margin-top: 70px;
+  }
+  .diningtable {
+    margin: 30px auto;
+  }
+  .diningtable .table {
+    margin: 30px auto;
+    width: 60%;
+  }
+  .table .info .card-title {
+    font-size: 24px;
+  }
+  .table .info .card-title-info {
+    font-size: 18px;
+  }
+  .table .info {
+    padding: 16px;
+  }
+  .diningtable .terms .text .card-title {
+    margin: 14px 0;
+    font-size: 24px;
+  }
+  .diningtable .terms .text i {
+    font-size: 24px;
+  }
+  .diningtable ul {
+    margin: 8px auto;
+    margin-right: 0;
+  }
+  .diningtable li {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .dining .text .title {
+    font-size: 60px;
+    padding: 20px;
+  }
+  .dining .text .card-title-1 {
+    width: 70%;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .alldininglist {
+    margin-top: 40px;
+  }
+  .dininglist {
+    margin-top: 50px;
+  }
+  .alldininglist .dininglist .listcontent {
+    margin-left: 0;
+  }
+  .alldininglist .dininglist .listcontent .card-title {
+    font-size: 24px;
+  }
+  .alldininglist .dininglist .listcontent .text .card-text {
+    font-size: 18px;
+  }
+  .dininglist {
+    margin-top: 30px;
+  }
+  .diningtable {
+    margin: 20px auto;
+  }
+  .diningtable .table {
+    margin: 20px auto;
+    width: 70%;
+  }
+  .table .info .card-title {
+    font-size: 22px;
+  }
+  .table .info .card-title-info {
+    font-size: 16px;
+  }
+  .table .info {
+    padding: 14px;
+  }
+  .diningtable .terms .text .card-title {
+    margin: 12px 0;
+    font-size: 20px;
+  }
+  .diningtable .terms .text i {
+    font-size: 20px;
+  }
+  .diningtable ul {
+    margin: 6px auto;
+    margin-right: 0;
+  }
+  .diningtable li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .dining .text .title {
+    font-size: 40px;
+    padding: 15px;
+  }
+  .dining .text .card-title-1 {
+    width: 70%;
+    margin-top: 18px;
+    font-size: 16px;
+  }
+  .alldininglist {
+    margin-top: 30px;
+  }
+  .alldininglist .dininglist {
+    width: 100%;
+  }
+  .alldininglist .dininglist .listcontent .card-title {
+    font-size: 20px;
+    margin-top: 14px;
+  }
+  .alldininglist .dininglist .listcontent .text .card-text {
+    margin-top: 18px;
+    font-size: 16px;
+  }
+  .diningtable {
+    margin: 10px auto;
+  }
+  .diningtable .table {
+    margin: 10px auto;
+    width: 80%;
+  }
+  .table .info .card-title {
+    font-size: 22px;
+  }
+  .table .info .card-title-info {
+    font-size: 16px;
+  }
+  .table .info {
+    padding: 12px;
+  }
+  .diningtable li {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+@media (max-width: 576px) {
+  .dining .text .title {
+    font-size: 30px;
+    padding: 13px;
+  }
+  .dining .text .card-title-1 {
+    width: 80%;
+    margin-top: 14px;
+    font-size: 14px;
+  }
+  .alldininglist {
+    margin-top: 20px;
+  }
+  .table .info .card-title {
+    font-size: 18px;
+  }
+  .table .info .card-title-info {
+    font-size: 20px;
+  }
+  .table .info {
+    padding: 0px;
+  }
+  .diningtable .terms .text .card-title {
+    margin: 8px 0;
+    font-size: 18px;
+  }
+  .diningtable .terms .text i {
+    font-size: 18px;
+  }
+}
+@media (max-width: 444px) {
+  .dining .text .title {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .dining .text .card-title-1 {
+    width: 90%;
+    margin-top: 12px;
+    font-size: 12px;
+  }
+  .alldininglist {
+    margin-top: 24px;
+  }
+  .alldininglist .dininglist .listcontent .text .card-text {
+    margin-top: 14px;
+    font-size: 14px;
+  }
+  .table .info .card-title {
+    font-size: 16px;
+  }
+  .table .info .card-title-info {
+    font-size: 18px;
+  }
+  .diningtable ul {
+    margin: 5px auto;
+    margin-right: 0;
+  }
+  .diningtable li {
+    font-size: 10px;
+    padding: 5px;
+  }
+}

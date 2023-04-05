@@ -1,0 +1,399 @@
+body {
+  --primary-color: #2eb872;
+  --secondary-color: #006b36;
+}
+/* BANNER */
+.banner {
+  position: relative;
+}
+.banner .text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12%;
+  z-index: 4;
+}
+.banner .text .card-title-1 {
+  color: white;
+}
+.banner .text .card-title {
+  color: white;
+}
+.banner .bannerimg {
+  position: relative;
+  height: 75vh;
+  overflow: hidden;
+}
+.banner .bannerimg::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.432);
+  z-index: 3;
+}
+.banner .bannerimg img {
+  animation: banner 3s;
+}
+.banner .text .card-title-1 {
+  animation: moveslide1 1s;
+}
+.banner .text .card-title {
+  animation: moveslide2 1s;
+}
+@keyframes banner {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* BREADCRUMB */
+.bcrumb {
+  background-color: rgb(252, 235, 199);
+}
+.bcrumb ul.breadcrumb {
+  padding: 5px 0;
+  list-style: none;
+}
+.bcrumb ul.breadcrumb li {
+  display: inline;
+  font-size: 16px;
+}
+.bcrumb ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: var(--secondary-color);
+  content: "/\00a0";
+}
+.bcrumb ul.breadcrumb li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.bcrumb ul.breadcrumb li a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+/* ABOUT */
+
+.abouttitle {
+  text-align: center;
+}
+.abouttitle .card-title {
+  font-size: 80px;
+  font-weight: 800;
+  padding: 50px;
+  width: 60%;
+  margin: 0 auto;
+  color: var(--secondary-color);
+  border-bottom: 1px solid #006b366e;
+}
+.aboutSafari {
+  margin-top: 100px;
+}
+/*   background-color: #faf5e9;
+ */
+/* MISSION */
+.mission {
+  width: 80%;
+  height: 100%;
+  margin: 100px auto 0 auto;
+}
+.mission .left {
+  padding-right: 50px;
+}
+.mission .animal .picture img {
+  object-fit: cover;
+}
+.mission .text .number {
+  margin-top: 30px;
+}
+.mission .text .number h1 {
+  color: var(--primary-color);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.mission .text .number h3 {
+  font-size: 18px;
+  text-align: center;
+}
+/* MORE */
+.more {
+  margin-top: 100px;
+}
+.more .card {
+  position: relative;
+  cursor: pointer;
+}
+
+.more .card .image img {
+  object-fit: cover;
+  transition: 0.5s;
+}
+.more .card:hover .image img {
+  transform: scale(1.2);
+}
+.more .card .image {
+  overflow: hidden;
+  position: relative;
+}
+.more .card .image::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.301);
+  z-index: 3;
+}
+
+.more .card .text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 70px;
+  z-index: 4;
+}
+.more .card .text .card-title-1 {
+  font-weight: 300;
+  font-size: 30px;
+  color: white;
+}
+.more .card .text .card-title-1::before {
+  display: none;
+}
+.more .card .text .card-title {
+  font-weight: 800;
+  font-size: 40px;
+  color: white;
+  margin-top: 10px;
+}
+
+/* STAFF */
+.team {
+  margin-top: 100px;
+}
+.team .title {
+  text-align: center;
+}
+.team .chair {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.team .chair .text {
+  text-align: center;
+}
+.team .chair .text img {
+  width: 15%;
+  margin: 10px auto;
+}
+.team .chair .text .card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px;
+}
+.team .chair .text .card-text {
+  font-size: 16px;
+  width: 70%;
+  margin: 5px auto;
+}
+.team .staff {
+  margin-top: 15px;
+}
+.team .staff .item {
+  padding: 10px;
+}
+.team .staff .item .name {
+  margin-top: 20px;
+}
+.team .staff .item .name .card-title-1 {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.575);
+}
+.team .staff .item .name .card-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 1400px) {
+  .more .card .text .card-title-1 {
+    font-size: 20px;
+  }
+  .more .card .text .card-title {
+    font-size: 28px;
+  }
+  .banner .bannerimg {
+    height: 75vh;
+  }
+}
+@media (max-width: 1237px) {
+  .aboutSafari {
+    margin-top: 50px;
+  }
+  .aboutSafari .text .card-title-1 {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .aboutSafari .text .card-title {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .aboutSafari .text .card-text {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .mission {
+    margin-top: 50px;
+  }
+  .mission .text .card-title-1 {
+    font-size: 16px;
+  }
+  .mission .text .card-title {
+    font-size: 30px;
+  }
+  .mission .text .card-text {
+    font-size: 16px;
+  }
+  .mission .text .number h1 {
+    font-size: 20px;
+  }
+  .mission .text .number h3 {
+    font-size: 16px;
+  }
+  .banner .bannerimg {
+    height: 70vh;
+  }
+  .team .staff .item .name .card-title-1 {
+    font-size: 16px;
+  }
+  .team .staff .item .name .card-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutSafari .text {
+    margin-top: 30px;
+  }
+
+  .mission .number {
+    margin-bottom: 20px;
+  }
+  .aboutSafari {
+    margin-top: 60px;
+  }
+  .mission {
+    margin-top: 60px;
+  }
+  .team .chair .text img {
+    width: 20%;
+  }
+  .team .chair .text .card-title {
+    font-size: 18px;
+  }
+  .team .chair .text .card-text {
+    font-size: 14px;
+  }
+  .banner .bannerimg {
+    height: 60vh;
+  }
+  .more {
+    margin-top: 60px;
+  }
+  .team {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 1141px) {
+  .aboutSafari .text {
+    margin-top: 20px;
+  }
+  .banner .text .card-title-1 {
+    font-size: 16px;
+  }
+  .banner .text .card-title {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutSafari {
+    margin-top: 40px;
+  }
+  .mission {
+    margin-top: 40px;
+  }
+  .more .card .text .card-title-1 {
+    font-size: 25px;
+  }
+  .more .card .text .card-title {
+    font-size: 30px;
+  }
+  .team .staff .item .name .card-title-1 {
+    font-size: 14px;
+  }
+  .team .staff .item .name .card-title {
+    font-size: 16px;
+  }
+  .more {
+    margin-top: 40px;
+  }
+  .team {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .banner .text .card-title-1 {
+    font-size: 14px;
+  }
+  .banner .text .card-title {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  .banner .bannerimg {
+    height: 40vh;
+  }
+  .more {
+    margin-top: 20px;
+  }
+  .team {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .abouttitle .card-title {
+    font-size: 70px;
+    padding: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .abouttitle .card-title {
+    font-size: 60px;
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .abouttitle .card-title {
+    font-size: 40px;
+    padding: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .abouttitle .card-title {
+    font-size: 30px;
+    padding: 15px;
+  }
+}
+@media (max-width: 444px) {
+  .abouttitle .card-title {
+    font-size: 25px;
+    padding: 10px;
+  }
+}

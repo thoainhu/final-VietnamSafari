@@ -1,0 +1,409 @@
+body {
+  --primary-color: #2eb872;
+  --secondary-color: #006b36;
+  --third-color: #e0610c;
+}
+.feedingcontent .text {
+  text-align: center;
+}
+.feedingcontent .text .card-title-1::before {
+  display: none;
+}
+.feedingcontent .text .card-title-1 {
+  width: 40%;
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.feedingcontent .text .title {
+  font-size: 80px;
+  font-weight: 800;
+  padding: 50px;
+  width: 60%;
+  margin: 10px auto;
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+.feeding {
+  margin-top: 80px;
+  padding: 5px;
+}
+.feeding .list {
+  width: 60%;
+  margin: auto;
+}
+.feeding .list .pic img {
+  border-radius: 30px;
+}
+.feeding .list .listcontent {
+  text-align: start;
+  margin-left: 30px;
+}
+.feeding .list .listcontent .card-title {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+.feeding .list .listcontent .time {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+.feeding .list .listcontent .time i {
+  font-weight: 600;
+}
+.feeding .list .listcontent .time .card-time {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.feeding .list .listcontent .text .card-text {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.tableprice {
+  text-align: center;
+  margin: 50px auto;
+  width: 80%;
+}
+.tableprice .currency {
+  padding: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+}
+.tableprice .currency .card-title {
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+}
+.tableprice .price {
+  padding: 20px;
+  border-bottom: 1px solid #006b36;
+}
+.tableprice .price .card-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+.tableprice .price .card-title span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.tableprice .price .card-title-price {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--third-color);
+}
+.feeding .terms {
+  border-bottom: 1px solid var(--primary-color);
+  margin-top: 0px;
+  padding: 10px;
+}
+.feeding .terms .text {
+  align-items: center;
+  color: var(--secondary-color);
+  display: flex;
+  cursor: pointer;
+}
+.feeding .terms .text .card-title {
+  margin: 16px 0;
+  font-size: 28px;
+  font-weight: 700;
+  width: 58%;
+}
+.feeding .terms .text i {
+  font-size: 30px;
+  padding: 10px;
+  margin-left: auto;
+  width: 42%;
+  color: var(--secondary-color);
+}
+.feeding .terms .text i:last-child {
+  margin-left: auto;
+  transition: 0.5s;
+}
+.feeding .terms .text.active i:last-child {
+  transform: rotate(180deg);
+}
+
+.feeding ul {
+  padding: 0;
+  display: none;
+  width: 95%;
+  margin: 10px auto;
+  text-align: start;
+  margin-right: 0;
+}
+.feeding li {
+  padding: 10px;
+  font-size: 18px;
+  list-style: decimal;
+}
+
+.buynow {
+  text-align: center;
+  margin-top: 50px;
+}
+.buynow .button .btn {
+  font-size: 28px;
+  padding: 15px 30px;
+}
+@media (max-width: 1400px) {
+  .feeding {
+    margin-top: 70px;
+  }
+  .feeding .list {
+    width: 70%;
+  }
+  .feeding .list .listcontent {
+    margin-left: 20px;
+  }
+  .feeding .list .listcontent .text .card-text {
+    margin-top: 18px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1200px) {
+  .feedingcontent .text .title {
+    font-size: 60px;
+    padding: 30px;
+    width: 80%;
+  }
+  .feedingcontent .text .card-title-1 {
+    width: 60%;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .feeding {
+    margin-top: 60px;
+  }
+  .feeding .list {
+    width: 80%;
+  }
+  .feeding .list .listcontent {
+    margin-left: 10px;
+  }
+  .feeding .list .listcontent .card-title {
+    font-size: 30px;
+  }
+  .feeding .list .listcontent .text .card-text {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  .feeding .tableprice {
+    margin: 40px auto;
+    width: 90%;
+  }
+  .tableprice .currency .card-title {
+    font-size: 20px;
+  }
+  .tableprice .price .card-title {
+    font-size: 18px;
+  }
+  .tableprice .price .card-title span {
+    font-size: 16px;
+  }
+  .tableprice .price .card-title-price {
+    font-size: 22px;
+  }
+  .tableprice .price {
+    padding: 16px;
+  }
+  .feeding .terms .text .card-title {
+    margin: 14px 0;
+    font-size: 24px;
+  }
+  .feeding .terms .text i {
+    font-size: 24px;
+  }
+  .feeding ul {
+    margin: 8px auto;
+    margin-right: 0;
+  }
+  .feeding li {
+    font-size: 16px;
+  }
+  .buynow {
+    margin-top: 30px;
+  }
+  .buynow .button .btn {
+    font-size: 26px;
+    padding: 12px 24px;
+  }
+}
+@media (max-width: 992px) {
+  .feedingcontent .text .title {
+    font-size: 60px;
+    padding: 20px;
+  }
+  .feedingcontent .text .card-title-1 {
+    width: 70%;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .feeding {
+    margin-top: 40px;
+  }
+  .feeding .list .listcontent {
+    margin-left: 0;
+  }
+  .feeding .list .listcontent .card-title {
+    font-size: 24px;
+  }
+
+  .feeding .list .listcontent .time {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .feeding .list .listcontent .text .card-text {
+    font-size: 18px;
+  }
+  .tableprice {
+    margin: 30px auto;
+  }
+  .tableprice .price .card-title {
+    font-size: 16px;
+  }
+  .tableprice .price .card-title span {
+    font-size: 14px;
+  }
+  .tableprice .price .card-title-price {
+    font-size: 20px;
+  }
+  .feeding .terms .text .card-title {
+    margin: 12px 0;
+    font-size: 20px;
+  }
+  .feeding .terms .text i {
+    font-size: 20px;
+  }
+  .feeding ul {
+    margin: 6px auto;
+    margin-right: 0;
+  }
+  .feeding li {
+    font-size: 14px;
+  }
+  .buynow {
+    margin-top: 20px;
+  }
+  .buynow .button .btn {
+    font-size: 24px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .feedingcontent .text .title {
+    font-size: 40px;
+    padding: 15px;
+  }
+  .feedingcontent .text .card-title-1 {
+    width: 70%;
+    margin-top: 18px;
+    font-size: 16px;
+  }
+  .feeding {
+    margin-top: 30px;
+  }
+  .feeding .list {
+    width: 100%;
+  }
+  .feeding .list .listcontent .card-title {
+    font-size: 20px;
+    margin-top: 14px;
+  }
+  .feeding .list .listcontent .text .card-text {
+    margin-top: 18px;
+    font-size: 16px;
+  }
+  .tableprice {
+    margin: 30px auto;
+    width: 100%;
+  }
+  .tableprice .price {
+    padding: 12px;
+  }
+  .tableprice .price .card-title {
+    font-size: 14px;
+  }
+  .tableprice .price .card-title span {
+    font-size: 12px;
+  }
+  .tableprice .price .card-title-price {
+    font-size: 16px;
+  }
+
+  .feeding li {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .buynow .button .btn {
+    font-size: 22px;
+    padding: 8px 20px;
+  }
+}
+@media (max-width: 576px) {
+  .feedingcontent .text .title {
+    font-size: 30px;
+    padding: 13px;
+  }
+  .feedingcontent .text .card-title-1 {
+    width: 80%;
+    margin-top: 14px;
+    font-size: 14px;
+  }
+  .feeding {
+    margin-top: 20px;
+  }
+  .tableprice {
+    margin: 20px auto;
+  }
+  .tableprice .price .card-title {
+    font-size: 18px;
+  }
+  .tableprice .price {
+    padding: 8px;
+  }
+  .feeding .terms .text .card-title {
+    margin: 8px 0;
+    font-size: 18px;
+  }
+  .feeding .terms .text i {
+    font-size: 18px;
+  }
+
+  .buynow .button .btn {
+    font-size: 18px;
+    padding: 8px 20px;
+  }
+}
+@media (max-width: 444px) {
+  .feedingcontent .text .title {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .feedingcontent .text .card-title-1 {
+    width: 90%;
+    margin-top: 12px;
+    font-size: 12px;
+  }
+  .feeding .list .listcontent .text .card-text {
+    margin-top: 14px;
+    font-size: 14px;
+  }
+  .feeding {
+    margin-top: 16px;
+  }
+  .feeding ul {
+    margin: 5px auto;
+    margin-right: 0;
+  }
+  .feeding li {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
