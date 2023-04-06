@@ -379,7 +379,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.178);
   border-radius: 50%;
   border-right: 1px solid var(--primary-color);
-  /* animation: rotateborder 1s infinite; */
+  animation: rotateborder 1s infinite;
 }
 @keyframes rotateborder {
   0% {
